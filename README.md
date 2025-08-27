@@ -16,6 +16,7 @@ Appointment system with calendar integration
 
 🚀 Features
 User Management
+
 👤 User Signup & Login (with profile picture)
 🧑‍⚕️ Role-based dashboard (Patient or Doctor)
 📦 Form validation and error handling
