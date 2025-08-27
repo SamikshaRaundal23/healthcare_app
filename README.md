@@ -54,8 +54,14 @@ Draft option before publishing
 
 📅 Appointment Booking System
 
-Patients can: Book appointments with doctors using a dedicated booking interface
-Doctors can:View scheduled appointments using an interactive Google Calendar integration Manage upcoming visits via a calendar dashboard
+Patients can:
+
+Book appointments with doctors using a dedicated booking interface Doctors can:
+
+View scheduled appointments using an interactive Google Calendar integration
+
+Manage upcoming visits via a calendar dashboard
+
 
 .................................................................................................................................................................................................................
 
