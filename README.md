@@ -81,7 +81,7 @@ Component	Tech Used-
 
 Clone the repo
 
-git clone https://github.com/yourusername/healthcare-django-app.git cd healthcare-django-app/backend
+git clone https://github.com/yourusername/healthcare-django-app.git cd app/backend
 
 Create and activate virtual environment
 
