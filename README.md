@@ -21,6 +21,7 @@ User Management
 🧑‍⚕️ Role-based dashboard (Patient or Doctor)
 📦 Form validation and error handling
 🎨 Responsive UI using Bootstrap 5
+
 Blog System
 📝 Doctors can create new blog posts with:
 Title
@@ -33,8 +34,9 @@ Draft option before publishing
 📰 Patients can view all published blogs, sorted by category
 📄 Blog summaries are truncated to 15 words with ‘...’ if longer
 📅 Appointment Booking System
+
 Patients can:
-Book appointments with doctors using a dedicated booking interface Doctors can:
+Book appointments with doctors using a dedicated booking interface Doctors can:                                                                                
 View scheduled appointments using an interactive Google Calendar integration
 Manage upcoming visits via a calendar dashboard
 
