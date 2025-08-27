@@ -1,14 +1,19 @@
 🏥 Healthcare App
 
-.......................................................................................................................................................................................................................................
-A modern web-based Healthcare Management System built with Django (Backend) and React + Vite (Frontend). It features role-based dashboards for Patients and Doctors, full user management, an integrated blog system, and appointment booking with Google Calendar API support.
 .................................................................................................................................................................................................................
+
+A modern web-based Healthcare Management System built with Django (Backend) and React + Vite (Frontend). It features role-based dashboards for Patients and Doctors, full user management, an integrated blog system, and appointment booking with Google Calendar API support.
+
+.................................................................................................................................................................................................................
+
 🏥 Healthcare App Overview
 This full-stack application facilitates seamless interaction between doctors and patients. In addition to managing profiles and roles, it includes:
 A blog platform for doctors to post informative health content
 Patients can explore blogs by category
 Appointment system with calendar integration
+
 .................................................................................................................................................................................................................
+
 🚀 Features
 User Management
 👤 User Signup & Login (with profile picture)
@@ -33,12 +38,14 @@ View scheduled appointments using an interactive Google Calendar integration
 Manage upcoming visits via a calendar dashboard
 
 .................................................................................................................................................................................................................
+
 Component	Tech Used-
 *Backend	Python, Django 
 *Frontend	React.js, Vite.js, Bootstrap 5
 *Database	MySQL
 *Calendar API	Google Calendar API
 *Media	Django Media Settings (for blog & profile images)
+
 .................................................................................................................................................................................................................
 
 Clone the repo
