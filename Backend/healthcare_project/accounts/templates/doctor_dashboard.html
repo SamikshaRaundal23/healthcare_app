@@ -1,0 +1,64 @@
+{% extends 'base.html' %}
+
+{% block title %}Doctor Dashboard{% endblock %}
+
+{% block content %}
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="text-center mb-4">
+                <h2 class="fw-bold">Welcome, Dr. {{ user.first_name }} {{ user.last_name }} <small class="text-muted">(Doctor)</small></h2>
+            </div>
+            <div class="card shadow-sm">
+                <div class="card-header bg-success text-white">
+                    <h5 class="mb-0">Your Details</h5>
+                </div>
+                <div class="card-body">
+                    {% if user.profile_picture %}
+                        <div class="text-center mb-3">
+                            <img src="{{ user.profile_picture.url }}" alt="Profile Picture" class="img-thumbnail rounded-circle" style="width: 120px; height: 120px; object-fit: cover;">
+                        </div>
+                    {% endif %}
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item"><strong>Username:</strong> {{ user.username }}</li>
+                        <li class="list-group-item"><strong>Email:</strong> {{ user.email }}</li>
+                        <li class="list-group-item"><strong>Address:</strong> {{ user.address_line1 }}, {{ user.city }}, {{ user.state }} - {{ user.pincode }}</li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Appointments Section -->
+  <h3 class="mb-3">Your Appointments</h3>
+  {% if appointments %}
+    <div class="card shadow-sm">
+      <div class="card-body">
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th>Patient</th>
+              <th>Speciality</th>
+              <th>Date</th>
+              <th>Start Time</th>
+              <th>End Time</th>
+            </tr>
+          </thead>
+          <tbody>
+            {% for appointment in appointments %}
+              <tr>
+                <td>{{ appointment.patient.first_name }} {{ appointment.patient.last_name }}</td>
+                <td>{{ appointment.speciality }}</td>
+                <td>{{ appointment.date }}</td>
+                <td>{{ appointment.start_time }}</td>
+                <td>{{ appointment.end_time }}</td>
+              </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+      </div>
+    </div>
+  {% else %}
+    <p class="text-muted">No appointments scheduled.</p>
+  {% endif %}
+        </div>
+    </div>
+</div>
+{% endblock %}
